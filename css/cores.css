@@ -1,0 +1,12 @@
+@charset "utf-8";
+@import "reset.css";
+@import "cores.css";
+
+:root{/* CSS HEX */
+--dark-teal: #114b5fff;
+--teal: #028090ff;
+--frosted-mint: #e4fde1ff;
+--baltic-blue: #456990ff;
+--punch-red: #ef233cff;
+
+}
