@@ -43,14 +43,14 @@
     <h1>senai</h1>
 
 
-    <div class="turmas">
+    <div class="turmas" id="turmas">
         <section class="amaral">
             <h2>turma-dev1b</h2>
-            <ul>
+            <ul class="listaAlunos" id="alunosAmaral_A">
                 <li>misael</li>
                 <li>otavio</li>
             </ul>
-    
+
         </section>
 
 
@@ -60,7 +60,7 @@
 
         <section class="amara2">
             <h2>turma-dev2b</h2>
-            <ul>
+            <ul class="listaAlunos" id="alunosAmaral_B">
                 <li>samuel</li>
                 <li>segura</li>
                 <li>gabriel</li>
@@ -72,33 +72,61 @@
         </section>
 
 
-            <section class="lelis1">
-                <h2>turma-dev1a</h2>
-                <ul>
-                    <li>misael</li>
-                    <li>otavio</li>
+        <section class="lelis1">
+            <h2>turma-dev1a</h2>
+            <ul class="listaAlunos" id="alunosLelis_A">
+                <li>misael</li>
+                <li>otavio</li>
                 </ul>
 
-            </section>
+        </section>
 
 
-                <section class="lelis2">
-                    <h2>turma-dev2a</h2>
-                    <ul>
-                        <li>samuel</li>
-                        <li>segura</li>
-                        <li>gabriel</li>
-                    </ul>
+        <section class="lelis2" id=lelis2>
+            <h2>turma-dev2a</h2>
+            <ul class="listaAlunos" id="alunosLelis_B">
+                <li>samuel</li>
+                <li>segura</li>
+                <li>gabriel</li>
+                <li>gay</li>
+            </ul>
 
-                </section>
+        </section>
 
-        </div>
+    </div>
 
 
-                <div>
-                    <p id="quantidadealunoslelis"><mark>0</mark></p>
-                    <p id="quantidadealunosamaral"><mark>0</mark></p>
-                </div>
+
+
+
+    <div>
+        <p id="quantidadealunoslelis"><mark>0</mark></p>
+        <p id="quantidadealunosamaral"><mark>0</mark></p>
+    </div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <footer>
+        <h3>Desenvolvido por: <mark><b>ruan</b></mark></h3>
+    </footer>
+
+    <script>
+        function contarQuantidadeAlunosTurma(lista, qtd) {
+            const listaAlunos = document.getElementById(lista);
+            const quantidade = listaAlunos.querySelectorAll("li").length;
+            document.getElementById(qtd).textContent = quantidade;
+        }
+        contarQuantidadeAlunosTurma('alunoLelis_A', 'qtdAlunosLelis_A');
+        contarQuantidadeAlunosTurma('alunoLelis_B', 'qtdAlunosLelis_B');
+        contarQuantidadeAlunosTurma('alunoAmaral_A', 'qtdAlunosAmaral_A');
+        contarQuantidadeAlunosTurma('amaral2', 'quantidadealunoslelis');
+
+
+
+    </script>
+
+
 
 
 </body>
